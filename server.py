@@ -34,7 +34,7 @@ def listening(client):
 	while True:
 		try:
 			print(client.recv(1024).decode('utf-8'))
-			print(Fore.RED)
+			print(Fore.RED, end=" ")
 		except:
 			print('Connection borked')
 			client.close()

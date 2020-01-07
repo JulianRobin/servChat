@@ -25,7 +25,7 @@ def sending(server):
 def listening(server):
     while True:
         print(server.recv(1024).decode('utf-8') + "\n")
-        print(Fore.GREEN)
+        print(Fore.GREEN, end=" ")
 
 
 # Create a socket object
